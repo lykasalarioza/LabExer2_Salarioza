@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.salarioza.labexer.MainActivity">
+
+    <TextView
+        android:id="@+id/usrview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="25dp"
+        />
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/usrview"
+        />
+    <TextView
+        android:id="@+id/pwdview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:layout_marginLeft="40dp"
+        android:textSize="25dp"
+        android:layout_below="@id/usrview"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/pwdview"
+        android:layout_below="@id/user"
+        />
+    <Button
+        android:id="@+id/shared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHARED PREFERENCES"
+        android:layout_below="@id/pwdview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textSize="20dp"
+        android:onClick="saveshared"
+        />
+    <Button
+        android:id="@+id/internal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INTERNAL STORAGE"
+        android:layout_below="@id/shared"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:onClick="saveinternal"
+        />
+    <Button
+        android:id="@+id/nxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/internal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Next"
+        android:textSize="20dp"
+        />
+
+
+</RelativeLayout>

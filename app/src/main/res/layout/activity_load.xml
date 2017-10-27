@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.salarioza.labexer.Load">
+
+    <Button
+        android:id="@+id/load_shared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load shared preferences"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="loadSharedpref"
+        />
+    <Button
+        android:id="@+id/load_int"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load internal storage"
+        android:textSize="20dp"
+        android:layout_below="@+id/load_shared"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="loadIntStore"
+        />
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear"
+        android:textSize="20dp"
+        android:layout_below="@id/load_int"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        />
+    <Button
+        android:onClick="goback"
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/clear"
+        android:layout_below="@id/load_int"
+        android:layout_marginLeft="50dp"
+        />
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="cleardisp"
+        android:layout_marginTop="300dp"
+        android:textSize="30dp"/>
+</RelativeLayout>
